@@ -32,8 +32,8 @@ const Homescreen = () => {
         { loading ? <Loader/> : error ? <Message variant='danger'> {error} </Message> : (
         <Row>
           {renderedProducts}
-        </Row>) }
-        
+        </Row>) 
+        }
     </>
   )
 }

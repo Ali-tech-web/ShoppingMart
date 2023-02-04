@@ -92,15 +92,18 @@ const ProductScreen = () => {
 
                       ) }
                       <ListGroup.Item>
-                          <Button 
-                            className='btn-block' 
-                            type='button' 
-                            disabled={product.countInStock === 0}
-                            onClick={addToCartHandler}
-                            >
-                              Add to Cart
-                          </Button>
-  
+                        <Row>
+                        <Col className='d-flex justify-content-center'>
+                            <Button 
+                                className='btn-block' 
+                                type='button' 
+                                disabled={product.countInStock === 0}
+                                onClick={addToCartHandler}
+                                >
+                                Add to Cart
+                            </Button>
+                        </Col>
+                        </Row>
                       </ListGroup.Item>
                   </ListGroup>
               </Card>

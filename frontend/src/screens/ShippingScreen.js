@@ -3,7 +3,7 @@ import {Form, Button} from 'react-bootstrap'
 import {useDispatch, useSelector} from 'react-redux'
 import FormContainer from '../components/FormContainer'
 import CheckoutSteps from '../components/CheckoutSteps'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { saveShippingAddress } from '../actions/cartActions'
 
 
@@ -86,7 +86,7 @@ const ShippingScreen = () => {
         </Form.Control>
       </Form.Group>
 
-      <Button type='submit' variant='primary'>
+      <Button type='submit' variant='primary' className="mt-2">
           Continue
       </Button>
     </Form>

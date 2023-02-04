@@ -9,6 +9,9 @@ import Login from './screens/LoginScreen'
 import RegisterScreen from "./screens/RegisterScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import ShippingScreen from "./screens/ShippingScreen";
+import PaymentScreen from "./screens/PaymentScreen";
+import PlaceOrderScreen from "./screens/PlaceOrderScreen";
+import OrderScreen from "./screens/OrderScreen";
 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
@@ -20,6 +23,9 @@ const App = () => {
         <Container>
           <Routes>
             <Route path='/shipping' element={<ShippingScreen/>}></Route>
+            <Route path='/order/:id' element={<OrderScreen/>}></Route>
+            <Route path='/payment' element={<PaymentScreen/>}></Route>
+            <Route path='/placeorder' element={<PlaceOrderScreen/>}></Route>
             <Route path='/login' element={<Login/>}></Route>
             <Route path='/register' element={<RegisterScreen/>}></Route>
             <Route path='/' element={<Homescreen/>} ></Route>
